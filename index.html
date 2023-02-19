@@ -1,57 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
-
-</head>
-<style>
- .App{
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows:repeat();
- }
-  .title{
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+   .App {
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: auto auto  ;
+      /* grid-template-rows: repeat(); */
+    }
    
-  }
- .D1{
-  margin: 2%;
-
- }
- .name,.isbn, .pgNo, .authors,.publisher,.released{
-  display: flex;
-  border-bottom: 0.1px  rgb(16, 16, 96) solid;
-  /* padding-bottom: 5px; */
- }
- .name > div ,.isbn > div,.pgNo >div,.authors >div,.publisher >div,.released>div{
-  padding-top: 10px;
-  padding-bottom: 5px;
-  width: 50%;
-   background-color: rgb(5,5,58);
-  color: white;
- }
- .name > div ,.isbn > div,.pgNo >div,.authors >div,.publisher >div,.released>div{
-  padding-left: 5px;
- }
- .name > div:first-child{
-border-top-right-radius: 50%;
- }
- .name > div:not(:first-child){
-  border-top-left-radius: 50%;
- }
-  .released > div:first-child{
-border-bottom-right-radius: -50%;
- }
- .released > div:not(:first-child){
-  border-bottom-left-radius: -50%;
- }
- 
-</style>
-<body>
- <script src="script.js"></script>
-</body>
+    ul {
+      list-style: none;
+      width: 95%;
+      margin: 2px;
+      padding-left: 0 !important;
+    }
+    li{
+      background-color: rgb(5, 5, 58);
+      color: white;
+      padding: 10px;
+    } 
+     .main{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     }
+    .class{
+      margin-right: 5%;
+    }
+    .show{
+      background-color: red;
+    }
+  </style>
+  <body>
+    
+    <script src="script.js"></script>
+  </body>
 </html>
